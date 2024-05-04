@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this is for animation and we use translate for simple animation-->
+<!--we can use this "translate" to navigate from one activity to another activity
+horizontally,vertically and in amny other ways-->
+<!--fromXdelta: from the activity which we are going to navigate and x means horizontally and y means vertiaclly-->
+<!--toXdelta: to where we are going to navigate-->
+<!--and the values in those can be from -100 to 100-->
+<!--duration: this will decide how much time should it take to navigate-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="0%p"
+    android:toXDelta="0%p"
+    android:duration="1000">
+</translate>

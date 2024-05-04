@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/images_icon_foreground"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyLibrary"
+        tools:targetApi="31">
+        <activity
+            android:name=".WebsiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CurrentReadActivity"
+            android:exported="false"
+            android:label="@string/activity_currently_reading" />
+        <activity
+            android:name=".FavoriteBookActivity"
+            android:exported="false"
+            android:label="@string/activity_favorite_boooks" />
+        <activity
+            android:name=".WantToReadActivity"
+            android:exported="false"
+            android:label="@string/activity_Want_to_read" />
+        <activity
+            android:name=".alreadyReadBookActivity"
+            android:exported="false"
+            android:label="@string/activity_already_books" />
+        <activity
+            android:name=".BookActivity"
+            android:exported="false"
+            android:label="@string/activity_book" />
+        <activity
+            android:name=".AllBoosActivity"
+            android:exported="false"
+            android:label="@string/activity_all_books" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
